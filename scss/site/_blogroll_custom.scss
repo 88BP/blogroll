@@ -1,0 +1,86 @@
+/* 
+
+ Custom Styles for Blogroll
+
+*/
+
+// Basic info
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+a {
+	font-weight: 700;
+}
+
+
+// Sidebar stuff
+
+.blogroll_logo {
+	@include grid-column(
+	    $columns:12
+	);
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+#text-2 .textwidget {
+	padding: 0.9375rem;
+	background-color: $orange;
+	color: $white;
+	margin-bottom: 2rem;
+	font-size: rem-calc(15);
+}
+#nav_menu-2, #nav_menu-3, #nav_menu-4 {
+	ul {
+		list-style: none;
+		margin-left: 0;
+		float: left;
+		width: 100%;
+	}
+}
+
+#nav_menu-2 ul {
+	li {
+		@include grid-column(
+	    	$columns:6,
+	    	$collapse:true
+		);
+		 a {
+		 font-size: rem-calc(14);
+		 display: block;
+		}
+	}
+}
+#menu-item-20 a {
+	@include button(
+    // We can set $full-width:true to remove side padding extend width. Default:false
+    $full-width: true,
+    $bg: $blue
+	);
+	padding-left: 0.9375rem;
+}
+
+#nav_menu-4 a {
+	&:before {
+		font: normal normal normal 14px/1 FontAwesome;
+		content: "\f069";
+		font-size: inherit;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		transform: translate(0, 0);
+		margin-right: 2px;
+		display: inline-block;
+		width: 24px;
+		text-align: center;
+	}
+}
+#menu-item-24 a:before {
+	content: "\f129";
+}
+#menu-item-25 a:before {
+	content: "\f09e";
+}
+#menu-item-23 a:before {
+	content: "\f075";
+}
