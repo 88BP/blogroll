@@ -84,3 +84,47 @@ a {
 #menu-item-23 a:before {
 	content: "\f075";
 }
+
+ul.accordion {
+	margin-left: 0;
+}
+.catpg_cathdr {
+	font-size: rem-calc(15);
+	border-bottom: 2px solid $black;
+}
+.catpg_blog {
+	font-weight: 400;
+	font-size: rem-calc(15);
+	line-height: rem-calc(15);
+	text-transform: none;
+	color: $orange;
+	margin-bottom: 0;
+}
+.catpg_cont {
+	p {
+		font-size: rem-calc(12);
+		line-height: rem-calc(12);
+		margin-bottom: 0.25rem
+	}
+	span {
+		font-weight: 700;
+		color: $blue;
+	}
+}
+.catpg_links {
+	list-style: none;
+	margin-left: 0;
+}
+.catpg_link {
+	height: 30px;
+	display: block;
+	background-image: url("../assets/img/bar-link.png");
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+	color: $white;
+	line-height: rem-calc(30);
+	padding-left: 0.5rem;
+	&:hover {
+		color: $black;
+	}
+}
