@@ -17,17 +17,17 @@ a {
 // Sidebar stuff
 
 .blogroll_logo {
-	@include grid-column(
-	    $columns:12
-	);
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.list-all {
+	margin-top: 0.5rem;
 }
 #text-2 .textwidget {
 	padding: 0.9375rem;
 	background-color: $orange;
 	color: $white;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 	font-size: rem-calc(15);
 }
 #nav_menu-2, #nav_menu-3, #nav_menu-4 {
@@ -57,6 +57,7 @@ a {
     $full-width: true,
     $bg: $blue
 	);
+	margin-bottom: 0;
 	padding-left: 0.9375rem;
 }
 
@@ -84,6 +85,9 @@ a {
 #menu-item-23 a:before {
 	content: "\f075";
 }
+#menu-other-sidebar-pages li {
+	margin-bottom: 1rem;
+}
 
 ul.accordion {
 	margin-left: 0;
@@ -99,6 +103,10 @@ ul.accordion {
 	text-transform: none;
 	color: $orange;
 	margin-bottom: 0;
+	i {
+		color: #e3e3e3;
+		float: right;
+	}
 }
 .catpg_cont {
 	p {
@@ -114,17 +122,22 @@ ul.accordion {
 .catpg_links {
 	list-style: none;
 	margin-left: 0;
+	text-align: right;
 }
 .catpg_link {
 	height: 30px;
-	display: block;
-	background-image: url("../assets/img/bar-link.png");
-	background-position: 100% 0;
+	display: inline-block;
+	background-image: url("../assets/img/bar-link_right.png");
+	background-position: 0 0;
 	background-repeat: no-repeat;
 	color: $white;
 	line-height: rem-calc(30);
-	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-left: 1.5rem;
 	&:hover {
 		color: $black;
+	}
+	i {
+		margin-left: 0.5rem;
 	}
 }

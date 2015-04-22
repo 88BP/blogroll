@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 <div class="row">
 <!-- Row for main content area -->
-	<div class="small-12 large-8 columns" role="main">
+   	<?php get_sidebar(); ?>
+	<div class="small-12 large-5 columns" role="main">
 
 	<?php if ( have_posts() ) : ?>
 
@@ -24,6 +25,5 @@
 	<?php } ?>
 
 	</div>
-	<?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>
